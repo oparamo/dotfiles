@@ -1,4 +1,4 @@
-sublimepref
+devprefs
 ===========
 
-Some of my Sublime settings, color schemes, etc
+Some of my settings and preferences for anything dev related.

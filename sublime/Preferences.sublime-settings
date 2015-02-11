@@ -43,7 +43,7 @@
     "spell_check": false,
 
     // The number of spaces a tab is considered equal to
-    "tab_size": 2,
+    "tab_size": 4,
 
     // Set to true to insert spaces when tab is pressed
     "translate_tabs_to_spaces": true,
@@ -165,7 +165,7 @@
 
     // Set to true to ensure the last line of the file ends in a newline
     // character when saving
-    "ensure_newline_at_eof_on_save": false,
+    "ensure_newline_at_eof_on_save": true,
 
     // Set to true to automatically save files when switching to a different file
     // or application
