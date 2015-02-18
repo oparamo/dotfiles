@@ -1,3 +1,5 @@
+# this file should be placed in the home directory (~/)
+
 "\e[A": history-search-backward
 "\e[B": history-search-forward 
 
