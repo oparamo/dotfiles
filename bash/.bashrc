@@ -1,7 +1,9 @@
 # this file should be placed in the home directory (~/)
 
 # Fancy colors for bash
-PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
+export TERM="xterm-color"
+PS1='\[\e[0;36m\]\u\[\e[m\] \[\e[0;35m\]\w\[\e[m\] \[\e[0;36m\]\$\[\e[m\] \[\e[0;37m\]'
+
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
 # NVM stuff
