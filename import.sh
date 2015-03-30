@@ -1,19 +1,29 @@
 #!/bin/bash
-# this script copies over my config files to their proper locations
-# comment out the lines for the config files you don't want to use
+# imports my config files from this Git repo to their proper locations
 
-## Copy bash config files ##
-# copy over bash_profile
-echo 'copying bash_profile'; cp bash/.bash_profile ~/;
-# copy over bashrc
-echo 'copying bashrc'; cp bash/.bashrc ~/;
-# copy over inputrc
-echo 'copying inputrc'; cp bash/.inputrc ~/;
+# stores this script's current directory in a variable
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd );
 
-## Copy git config files ##
-# copy over gitconfig
-echo 'copying gitconfig'; cp git/.gitconfig ~/;
-# copy over gitignore_global
-echo 'copying gitignore_global'; cp git/.gitignore_global ~/;
-# copy over git-completion
-echo 'copying git-completion'; cp git/git-completion.bash ~/;
+echo 'Changing directory...';
+pushd $DIR;
+echo;
+
+# import bash config files
+echo 'importing bash_profile';
+cp bash/.bash_profile ~/;
+echo 'importing bashrc';
+cp bash/.bashrc ~/;
+echo 'importing inputrc';
+cp bash/.inputrc ~/;
+
+# import git config files
+echo 'importing gitconfig';
+cp git/.gitconfig ~/;
+echo 'importing gitignore_global';
+cp git/.gitignore_global ~/;
+echo 'importing git-completion';
+cp git/git-completion.bash ~/;
+
+echo;
+echo 'Returning to previous directory...'
+popd;
