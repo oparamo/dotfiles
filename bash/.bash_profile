@@ -26,9 +26,9 @@ export ANDROID_HOME=~/android
 alias p='cd ~/projects'
 alias n='cd ~/projects/nectarOM'
 alias la='ls -a'
-alias s='subl .'
+#alias s='subl .'
+alias a='atom .'
 alias m='git co master'
-alias master='git co master'
 
 # Bin paths
 export PATH=/usr/local/sbin:$PATH
