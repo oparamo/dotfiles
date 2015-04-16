@@ -1,0 +1,26 @@
+"*":
+  editor:
+    invisibles: {}
+    tabLength: 4
+    showIndentGuide: true
+    softWrap: true
+    fontSize: 13
+  core:
+    themes: [
+      "seti-ui"
+      "monokai"
+    ]
+    projectHome: "/Users/oparamo/projects"
+    followSymlinks: true
+  "exception-reporting":
+    userId: "9aa456c1-3779-03dc-dfcb-ac493aefdc18"
+  welcome:
+    showOnStartup: false
+  linter: {}
+  react: {}
+  minimap:
+    plugins:
+      bookmarks: true
+      selection: true
+      "find-and-replace": true
+  "linter-jscs": {}
