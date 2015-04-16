@@ -1,5 +1,5 @@
 #!/bin/bash
-# imports my config files from this Git repo to their proper locations
+# exports my current local config files to this Git repo
 
 # stores this script's current directory in a variable
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd );
