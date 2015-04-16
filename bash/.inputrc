@@ -1,7 +1,7 @@
-# this file should be placed in the home directory (~/)
+# This file should be placed in the home directory ~/
 
 "\e[A": history-search-backward
-"\e[B": history-search-forward 
+"\e[B": history-search-forward
 
 set show-all-if-ambiguous on
 set completion-ignore-case on
