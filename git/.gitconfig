@@ -30,6 +30,9 @@
     publish = push -u origin HEAD
     pullr = pull --rebase
     rb = rebase
+    rbm = rebase master
+    rh = reset --hard
+    rs = reset --soft
     st = status
     undo = reset HEAD@{1}
 [difftool "sourcetree"]
