@@ -3,29 +3,38 @@
     email = oscar.paramo@me.com
 [core]
     autocrlf = input
-    excludesfile = /Users/oparamo/.gitignore_global
+    excludesfile = /Users/oscar.paramo/.gitignore_global
     editor = code --wait
 [push]
     default = simple
 [alias]
     a = add
+    aa = add *
     ap = add -p
     b = branch
     ba = branch -a
+    bd = branch -d
+    c = commit --verbose
+    cam = commit -am
     cm = commit -m
     co = checkout
     cob = checkout -b
+    finish = !git rebase -i $(git merge-base HEAD master)
     initc = !git init && git commit --allow-empty -m \"Initial commit.\" --allow-empty
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
     ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
     m = commit --amend --verbose
+    patch = add --patch
     publish = push -u origin HEAD
     pullr = pull --rebase
     rb = rebase
+    rbm = rebase master
     rh = reset --hard
     rs = reset --soft
     st = status
     undo = reset HEAD@{1}
+[credential]
+    helper = osxkeychain
 [filter "media"]
     clean = git-media-clean %f
     smudge = git-media-smudge %f

@@ -6,4 +6,9 @@ echo 'importing git configuration';
 cp ./git/.gitconfig ~/;
 cp ./git/.gitignore_global ~/;
 
+# import zsh config files
+echo 'importing zsh configuration';
+cp ./zsh/.zshrc ~/;
+cp ./zsh/aliases.zsh ~/.oh-my-zsh/custom/;
+
 echo 'donesies';
