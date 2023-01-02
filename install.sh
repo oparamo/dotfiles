@@ -8,7 +8,6 @@ cp ./git/.gitignore_global ~/;
 
 # zsh config files
 echo 'applying zsh configuration';
-cp ./zsh/.zshrc ~/;
 cp ./zsh/aliases.zsh ~/.oh-my-zsh/custom/;
 
 echo 'donesies';
