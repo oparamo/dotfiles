@@ -1,0 +1,10 @@
+{
+  "name": "dotfiles",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true,
+      "username": "devcontainer"
+    }
+  }
+}
