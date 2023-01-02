@@ -1,9 +1,9 @@
 [user]
     name = Oscar Paramo
-    email = oscar.paramo@me.com
+    email = oscar@paramo.dev
 [core]
     autocrlf = input
-    excludesfile = /Users/oparamo/.gitignore_global
+    excludesfile = ~/.gitignore_global
     editor = code --wait
 [push]
     default = simple
@@ -20,12 +20,8 @@
     ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
     m = commit --amend --verbose
     publish = push -u origin HEAD
-    pullr = pull --rebase
     rb = rebase
     rh = reset --hard
     rs = reset --soft
     st = status
     undo = reset HEAD@{1}
-[filter "media"]
-    clean = git-media-clean %f
-    smudge = git-media-smudge %f

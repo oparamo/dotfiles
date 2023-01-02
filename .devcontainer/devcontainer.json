@@ -3,8 +3,19 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
-      "configureZshAsDefaultShell": true,
-      "username": "devcontainer"
+      "configureZshAsDefaultShell": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.atom-keybindings",
+        "waderyan.gitblame",
+        "mathcale.theme-dracula-refined"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Dracula Refined"
+      }
     }
   }
 }
